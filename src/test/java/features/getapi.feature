@@ -17,3 +17,13 @@ Feature: GET API
     And path '20'
     When method GET
     Then status 404
+
+  Scenario: get pokemons
+    Given url 'https://pokeapi.co/api/v2/pokemon'
+    And path 'squirtle'
+    When method GET
+    Then status 200
+    * def save = response
+    * def name = save.name
+    * print name
+    Then match name == 'charizard'

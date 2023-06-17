@@ -1,6 +1,6 @@
 Feature: print hello world
-
-    Scenario: Hello world scenario
+  @tag1
+  Scenario: Hello world scenario
     * print 'hello world'
     * print 'this is a second text'
 
