@@ -30,3 +30,4 @@ jobs:
         run: |
           mvn install
           mvn clean
+          mvn test -Dtest=runner.testRunner
