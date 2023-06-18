@@ -15,3 +15,4 @@ Feature: print hello world
     * def num1 = 10
     * def num2 = 20
     * print 'this number is ' + num1 * num2
+    Then match num1 * num2 == 20
