@@ -1,0 +1,22 @@
+name: Ejecutar pruebas de Karate
+
+on:
+  push:
+    branches:
+      - master  # Cambiar esto según la rama que deseas observar
+
+jobs:
+  karate-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código fuente
+        uses: actions/checkout@v2
+
+      - name: Configurar Java
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+
+      - name: Ejecutar pruebas de Karate
+        run: mvn test -Dtest=runner.TestRunner
