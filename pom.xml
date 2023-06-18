@@ -62,6 +62,17 @@
 <!--    </build>-->
 <!--IMPORTANT-->
     <build>
+        <plugins>
+            <plugin>
+                <groupId>com.intuit.karate</groupId>
+                <artifactId>karate-core</artifactId>
+                <version>1.4.0</version>
+                <configuration>
+                    <tags>~@ignore</tags>
+                </configuration>
+            </plugin>
+            <!-- Otros plugins que puedas necesitar -->
+        </plugins>
         <resources>
             <resource>
                 <directory>src/test/java</directory>
