@@ -21,6 +21,6 @@ jobs:
 
       - name: Ejecutar pruebas de Karate
         run: |
-          mvn test -Dtest=runner.testRunner
+          mvn test -Dtest=runner
         # -DfailIfNoTests=false
 
