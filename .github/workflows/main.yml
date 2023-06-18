@@ -20,5 +20,7 @@ jobs:
           distribution: 'adopt'
 
       - name: Ejecutar pruebas de Karate
-        run: mvn test -Dtest=runner.TestRunner
+        run: |
+          mvn test -Dtest=runner.testRunner
         # -DfailIfNoTests=false
+
