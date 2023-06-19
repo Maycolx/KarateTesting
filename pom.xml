@@ -62,37 +62,37 @@
     <!--    </build>-->
     <!--IMPORTANT-->
     <build>
-<!--        <testResources>-->
-<!--            <testResource>-->
-<!--                <directory>src/test/java/runner</directory>-->
-<!--            </testResource>-->
-<!--        </testResources>-->
+        <testResources>
+            <testResource>
+                <directory>src/test/java/runner</directory>
+            </testResource>
+        </testResources>
         <plugins>
             <plugin>
                 <groupId>com.intuit.karate</groupId>
                 <artifactId>karate-core</artifactId>
                 <version>1.4.0</version>
-<!--                <configuration>-->
-<!--                    <tags>~@ignore</tags>-->
-<!--                </configuration>-->
+                <configuration>
+                    <tags>~@ignore</tags>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>com.intuit.karate</groupId>
                 <artifactId>karate-junit5</artifactId>
                 <version>1.4.0</version>
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-surefire-plugin</artifactId>-->
-<!--                <version>3.0.0</version>-->
-<!--                <configuration>-->
-<!--                    <testSourceDirectory>src/test/java/runner</testSourceDirectory>-->
-<!--                    <includes>-->
-<!--                        <include>**/*.java</include>-->
-<!--                    </includes>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-            <!-- Otros plugins que puedas necesitar -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <testSourceDirectory>src/test/java/runner</testSourceDirectory>
+                    <includes>
+                        <include>**/*.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+<!--             Otros plugins que puedas necesitar-->
         </plugins>
         <resources>
             <resource>
