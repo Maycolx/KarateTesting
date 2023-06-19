@@ -92,7 +92,7 @@
                     </includes>
                 </configuration>
             </plugin>
-            <!-- Otros plugins que puedas necesitar -->
+<!--             Otros plugins que puedas necesitar-->
         </plugins>
         <resources>
             <resource>
